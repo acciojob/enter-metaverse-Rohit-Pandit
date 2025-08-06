@@ -4,5 +4,7 @@ btn.addEventListener("click",()=>{
 	const ele = document.getElementById("status");
 	const h1Tag = document.createElement('h1');
 	h1Tag.textContent = "Entered Metaverse";
-	ele.appendChild(h1Tag);
+	ele.remove();
+	document.body.insertBefore(h1Tag,btn);
+	
 })
